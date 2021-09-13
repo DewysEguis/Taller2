@@ -23,3 +23,14 @@ def pto2 (num, t_com):
         desc = t_com * 0.15
 
     return desc
+
+#Punto 3
+
+def pto3(mon_fi):
+
+    if mon_fi <= 50000:
+        cuota = mon_fi * 0.03
+    else:
+        cuota = mon_fi * 0.02
+               
+    return cuota
