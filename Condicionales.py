@@ -105,3 +105,16 @@ def pto8 (total):
     interes = credito_fab * 0.2
 
     return invertir, pres_bank, credito_fab, interes
+
+#Punto 9
+
+def pto9 (num1, num2):
+
+    if num1 == num2:
+        return num1 * num2
+
+    elif num1 > num2:
+        return num1 - num2
+        
+    else:
+        return num1 + num2
