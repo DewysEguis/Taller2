@@ -76,6 +76,8 @@ def pto6 (cant):
 
     return descu
 
+#Punto 7
+
 def pto7 (prec, marca):
     desc = 0
 
@@ -87,3 +89,19 @@ def pto7 (prec, marca):
 
     tot = (prec - desc) * 1.16
     return tot
+
+#Punto 8
+
+def pto8 (total):
+    if total > 500000:
+        invertir = total * 0.55
+        pres_bank = total * 0.3
+        credito_fab = total * 0.15
+    else:
+        invertir = total * 0.7
+        credito_fab = total * 0.3
+        pres_bank = 0
+
+    interes = credito_fab * 0.2
+
+    return invertir, pres_bank, credito_fab, interes
