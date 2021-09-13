@@ -75,3 +75,15 @@ def pto6 (cant):
         descu = tot * 0.4
 
     return descu
+
+def pto7 (prec, marca):
+    desc = 0
+
+    if marca == 'NOSY':
+        desc += prec * 0.05
+
+    if prec >= 2000:
+        desc += prec * 0.1
+
+    tot = (prec - desc) * 1.16
+    return tot
