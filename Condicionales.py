@@ -45,3 +45,19 @@ def pto4 (prom, gan_diar):
         return f'La multa es: {mul}... Y genera una perdida de: {perdida}'
 
     return 'No tiene ninguna sanción'
+
+#Punto 5
+
+def pto5 (precio, deval, incre):
+    cant_deval = -1 * (((precio * deval) * deval) * deval)
+    cant_incre = (((precio * incre) * incre) * incre)
+
+    if cant_deval < (cant_incre / 2):
+        return True
+
+    return False
+
+if pto5 (350000, -0.3, 0.1):
+    print('Comprar')
+else:
+    print('No comprar')
