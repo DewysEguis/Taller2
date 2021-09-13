@@ -26,7 +26,7 @@ def pto2 (num, t_com):
 
 #Punto 3
 
-def pto3(mon_fi):
+def pto3 (mon_fi):
 
     if mon_fi <= 50000:
         cuota = mon_fi * 0.03
@@ -34,3 +34,14 @@ def pto3(mon_fi):
         cuota = mon_fi * 0.02
                
     return cuota
+
+#Punto 4
+
+def pto4 (prom, gan_diar):
+    if prom > 170:
+        mul = gan_diar / 2
+        perdida = (gan_diar * 5) + mul
+
+        return f'La multa es: {mul}... Y genera una perdida de: {perdida}'
+
+    return 'No tiene ninguna sanción'
