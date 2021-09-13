@@ -61,3 +61,17 @@ if pto5 (350000, -0.3, 0.1):
     print('Comprar')
 else:
     print('No comprar')
+
+#Punto 6
+
+def pto6 (cant):
+    tot = cant * 11000
+
+    if cant < 5:
+        descu = tot * 0.1
+    elif cant >= 5 and cant < 10:
+        descu = tot * 0.2
+    elif cant > 10:
+        descu = tot * 0.4
+
+    return descu
